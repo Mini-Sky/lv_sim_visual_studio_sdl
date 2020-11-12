@@ -717,6 +717,48 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="TestPaltform\Page_MainMenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_FtTest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\PageCommon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_EventTest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\4Tracking.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\3Tracking.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\HwLtTest_Create.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Ultrasonic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\servo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\img\img_src_wall.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\img\img_src_ultrasonic.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\img\img_src_sun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\img\img_src_moon.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\MPU6050.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lvgl/lvgl.h">
@@ -1091,8 +1133,12 @@
     <ClInclude Include="lv_ex_conf.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TestPaltform\Page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="SDL2.dll" />
+    <None Include="lvgl\src\lv_font\lv_font.mk" />
   </ItemGroup>
 </Project>

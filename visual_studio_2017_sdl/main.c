@@ -13,7 +13,8 @@
 #include "lv_drivers/display/monitor.h"
 #include "lv_drivers/indev/mouse.h"
 #include "lv_drivers/indev/keyboard.h"
-#include "lv_examples/lv_examples.h"
+#include "TestPaltform/Page.h"
+//#include "lv_examples/lv_examples.h"
 
 /*********************
 *      DEFINES
@@ -44,58 +45,15 @@ static lv_indev_t * kb_indev;
 
 int main(int argc, char** argv)
 {
-    /*Initialize LittlevGL*/
     lv_init();
-
-    /*Initialize the HAL for LittlevGL*/
     hal_init();
-
-    /*
-     * Demos, benchmarks, and tests.
-     *
-     * Uncomment any one (and only one) of the functions below to run that
-     * item.
-     */
-
-    lv_demo_widgets();
-    //lv_demo_benchmark();
-    //lv_demo_keypad_encoder();
-    //lv_demo_printer();
-    //lv_demo_stress();
-    //lv_ex_get_started_1();
-    //lv_ex_get_started_2();
-    //lv_ex_get_started_3();
-
-    //lv_ex_style_1();
-    //lv_ex_style_2();
-    //lv_ex_style_3();
-    //lv_ex_style_4();
-    //lv_ex_style_5();
-    //lv_ex_style_6();
-    //lv_ex_style_7();
-    //lv_ex_style_8();
-    //lv_ex_style_9();
-    //lv_ex_style_10();
-    //lv_ex_style_11();
-
-    /*
-     * There are many examples of individual widgets found under the
-     * lv_examples/src/lv_ex_widgets directory.  Here are a few sample test
-     * functions.  Look in that directory to find all the rest.
-     */
-    //lv_ex_arc_1();
-    //lv_ex_cpicker_1();
-    //lv_ex_gauge_1();
-    //lv_ex_img_1();
-    //lv_ex_tileview_1();
-
-    while (1) {
-        /* Periodically call the lv_task handler.
-        * It could be done in a timer interrupt or an OS task too.*/
+    lv_obj_t* obj = MainMenu_Create();
+    lv_scr_load(obj);
+    while (1) 
+    {
         lv_task_handler();
-        Sleep(10);       /*Just to let the system breathe */
+        Sleep(1);       
     }
-
     return 0;
 }
 

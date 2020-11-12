@@ -23,32 +23,32 @@
     <ProjectGuid>{6F59884D-4367-49A9-B6FD-BF60376873CE}</ProjectGuid>
     <RootNamespace>visualstudio2017sdl</RootNamespace>
     <ProjectName>lv_sim_visual_studio_sdl</ProjectName>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -375,6 +375,20 @@
     <ClCompile Include="lv_examples/src/lv_ex_widgets/lv_ex_tileview/lv_ex_tileview_1.c" />
     <ClCompile Include="lv_examples/src/lv_ex_widgets/lv_ex_win/lv_ex_win_1.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="TestPaltform\3Tracking.c" />
+    <ClCompile Include="TestPaltform\4Tracking.c" />
+    <ClCompile Include="TestPaltform\HwLtTest_Create.c" />
+    <ClCompile Include="TestPaltform\img\img_src_moon.c" />
+    <ClCompile Include="TestPaltform\img\img_src_sun.c" />
+    <ClCompile Include="TestPaltform\img\img_src_ultrasonic.c" />
+    <ClCompile Include="TestPaltform\img\img_src_wall.c" />
+    <ClCompile Include="TestPaltform\MPU6050.c" />
+    <ClCompile Include="TestPaltform\Page_EventTest.c" />
+    <ClCompile Include="TestPaltform\Page_MainMenu.c" />
+    <ClCompile Include="TestPaltform\Page_FtTest.c" />
+    <ClCompile Include="TestPaltform\PageCommon.c" />
+    <ClCompile Include="TestPaltform\servo.c" />
+    <ClCompile Include="TestPaltform\Ultrasonic.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lvgl/lvgl.h" />
@@ -501,6 +515,7 @@
     <ClInclude Include="lv_conf.h" />
     <ClInclude Include="lv_drv_conf.h" />
     <ClInclude Include="lv_ex_conf.h" />
+    <ClInclude Include="TestPaltform\Page.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="lvgl\src\lv_font\lv_font.mk" />
