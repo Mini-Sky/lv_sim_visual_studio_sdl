@@ -720,28 +720,10 @@
     <ClCompile Include="TestPaltform\Page_MainMenu.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestPaltform\Page_FtTest.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TestPaltform\PageCommon.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TestPaltform\Page_EventTest.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TestPaltform\4Tracking.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TestPaltform\3Tracking.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TestPaltform\HwLtTest_Create.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TestPaltform\Ultrasonic.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TestPaltform\servo.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TestPaltform\img\img_src_wall.c">
@@ -756,7 +738,52 @@
     <ClCompile Include="TestPaltform\img\img_src_moon.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestPaltform\MPU6050.c">
+    <ClCompile Include="TestPaltform\img\img_src_rgb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\img\img_src_bluetooth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\img\img_src_data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\img\img_src_iphone.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\bsp\bsp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\img\img_src_infrared.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\img\img_src_wall2.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_3Tracking.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_4Tracking.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_Bluetooth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_MPU6050.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_OLED.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_HwLtTest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_RGB.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_Servo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestPaltform\Page_Ultrasonic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -1134,6 +1161,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="TestPaltform\Page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestPaltform\bsp\bsp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

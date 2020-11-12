@@ -375,20 +375,29 @@
     <ClCompile Include="lv_examples/src/lv_ex_widgets/lv_ex_tileview/lv_ex_tileview_1.c" />
     <ClCompile Include="lv_examples/src/lv_ex_widgets/lv_ex_win/lv_ex_win_1.c" />
     <ClCompile Include="main.c" />
-    <ClCompile Include="TestPaltform\3Tracking.c" />
-    <ClCompile Include="TestPaltform\4Tracking.c" />
-    <ClCompile Include="TestPaltform\HwLtTest_Create.c" />
+    <ClCompile Include="TestPaltform\Page_3Tracking.c" />
+    <ClCompile Include="TestPaltform\Page_4Tracking.c" />
+    <ClCompile Include="TestPaltform\Page_Bluetooth.c" />
+    <ClCompile Include="TestPaltform\bsp\bsp.c" />
+    <ClCompile Include="TestPaltform\Page_HwLtTest.c" />
+    <ClCompile Include="TestPaltform\img\img_src_bluetooth.c" />
+    <ClCompile Include="TestPaltform\img\img_src_data.c" />
+    <ClCompile Include="TestPaltform\img\img_src_infrared.c" />
+    <ClCompile Include="TestPaltform\img\img_src_iphone.c" />
     <ClCompile Include="TestPaltform\img\img_src_moon.c" />
+    <ClCompile Include="TestPaltform\img\img_src_rgb.c" />
     <ClCompile Include="TestPaltform\img\img_src_sun.c" />
     <ClCompile Include="TestPaltform\img\img_src_ultrasonic.c" />
     <ClCompile Include="TestPaltform\img\img_src_wall.c" />
-    <ClCompile Include="TestPaltform\MPU6050.c" />
+    <ClCompile Include="TestPaltform\img\img_src_wall2.c" />
+    <ClCompile Include="TestPaltform\Page_MPU6050.c" />
+    <ClCompile Include="TestPaltform\Page_OLED.c" />
     <ClCompile Include="TestPaltform\Page_EventTest.c" />
     <ClCompile Include="TestPaltform\Page_MainMenu.c" />
-    <ClCompile Include="TestPaltform\Page_FtTest.c" />
     <ClCompile Include="TestPaltform\PageCommon.c" />
-    <ClCompile Include="TestPaltform\servo.c" />
-    <ClCompile Include="TestPaltform\Ultrasonic.c" />
+    <ClCompile Include="TestPaltform\Page_RGB.c" />
+    <ClCompile Include="TestPaltform\Page_Servo.c" />
+    <ClCompile Include="TestPaltform\Page_Ultrasonic.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lvgl/lvgl.h" />
@@ -515,6 +524,7 @@
     <ClInclude Include="lv_conf.h" />
     <ClInclude Include="lv_drv_conf.h" />
     <ClInclude Include="lv_ex_conf.h" />
+    <ClInclude Include="TestPaltform\bsp\bsp.h" />
     <ClInclude Include="TestPaltform\Page.h" />
   </ItemGroup>
   <ItemGroup>

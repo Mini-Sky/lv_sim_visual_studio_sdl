@@ -36,8 +36,9 @@ static void LabelTimer_Create(lv_obj_t* par)
 lv_obj_t* MPU6050_Create(void)
 {
     lv_obj_t* scr = lv_obj_create(NULL, NULL);
-    ExitButton_Create(scr, MainMenuReturn_Handler);
+    
     ObjCircle_Create(scr);
     LabelTimer_Create(scr);
+    ExitButton_Create(scr, MainMenuReturn_Handler);
     return scr;
 }

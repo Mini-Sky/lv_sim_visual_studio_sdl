@@ -2,7 +2,22 @@
 
 LV_IMG_DECLARE(img_src_sun);
 LV_IMG_DECLARE(img_src_moon);
+LV_IMG_DECLARE(img_src_infrared);
+LV_IMG_DECLARE(img_src_wall2);
 
+
+static void ImgInfrared_Create(lv_obj_t* par)
+{
+    lv_obj_t* img1 = lv_img_create(par, NULL);
+    lv_img_set_src(img1, &img_src_infrared);
+    lv_obj_align(img1, NULL, LV_ALIGN_CENTER, -32, 20);
+}
+static void ImgWall_Create(lv_obj_t* par)
+{
+    lv_obj_t* img1 = lv_img_create(par, NULL);
+    lv_img_set_src(img1, &img_src_wall2);
+    lv_obj_align(img1, NULL, LV_ALIGN_CENTER, -32, -20);
+}
 static void ImgSun_Create(lv_obj_t* par)
 {
     lv_obj_t* img = lv_img_create(par, NULL);
@@ -33,6 +48,9 @@ lv_obj_t* HwLtTest_Create(void)
     ExitButton_Create(scr, MainMenuReturn_Handler);
     ImgMoon_Create(scr);
     ImgSun_Create(scr);
-    Hw_Create(scr);
+    //Hw_Create(scr);
+
+    ImgInfrared_Create(scr);
+    ImgWall_Create(scr);
     return scr;
 }

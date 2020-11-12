@@ -11,13 +11,34 @@ static void Title_Create(lv_obj_t* par)
     Title = label;
 }
 
+static const char* My_List[] = {
+    "Ultrasonic",               //超声波测距模块
+    "4Tracking",                //四路循迹模块    
+    "3Tracking",                //三路循迹模块
+    "HW and LT",                //红外寻光模块
+    "RGB",                      //RGB模块
+    "OLED",                     //OLED显示屏
+    "Servo",                    //舵机
+    "MPU6050",                  //陀螺仪
+    "Bluetooth",                //蓝牙4.0模块
+    "Event_Test"
+};
+
 
 static void event_handler(lv_obj_t* obj, lv_event_t event)
 {
-    if (event == LV_EVENT_CLICKED) {
+    if (event == LV_EVENT_CLICKED) 
+    {
         const char* text = lv_list_get_btn_text(obj);
         //lv_scr_load_anim
-
+        /*for (int i = 0; i < 10; i++)
+        {
+            if (strcmp(text, My_List[i]) == 0)
+            {
+                lv_obj_t* scr = UtTest_Create();
+                lv_scr_load_anim(scr, LV_SCR_LOAD_ANIM_MOVE_LEFT, 200, 0, true);
+            }
+        }*/
         if (strcmp(text, "Ultrasonic") == 0)
         {
             lv_obj_t* scr = UtTest_Create();
@@ -60,8 +81,8 @@ static void event_handler(lv_obj_t* obj, lv_event_t event)
         }
         else if (strcmp(text, "Bluetooth") == 0)
         {
-            /*lv_obj_t* scr = Bluetooth_Create();
-            lv_scr_load_anim(scr, LV_SCR_LOAD_ANIM_MOVE_LEFT, 200, 0, true);*/
+            lv_obj_t* scr = Bluetooth_Create();
+            lv_scr_load_anim(scr, LV_SCR_LOAD_ANIM_MOVE_LEFT, 200, 0, true);
         }
         else if (strcmp(text, "Event_Test") == 0)
         {
@@ -72,18 +93,7 @@ static void event_handler(lv_obj_t* obj, lv_event_t event)
     }
 }
 
-static const char* My_List[] = {
-    "Ultrasonic",               //超声波测距模块
-    "4Tracking",                //四路循迹模块    
-    "3Tracking",                //三路循迹模块
-    "HW and LT",                //红外寻光模块
-    "RGB",                      //RGB模块
-    "OLED",                     //OLED显示屏
-    "Servo",                    //舵机
-    "MPU6050",                  //陀螺仪
-    "Bluetooth",                 //蓝牙4.0模块
-    "Event_Test"
-};
+
 
 static void SensorList_Create(lv_obj_t* par)
 {
